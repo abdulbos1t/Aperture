@@ -63,6 +63,27 @@ img {
     margin-right: auto;
 }
 
+/* MAIN BTN STYLES */
+.main-btn {
+    width: 14.3rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1.4rem;
+    padding: 0.5rem 1rem 0.5rem 0.4rem;
+    text-decoration: none;
+}
+.main-btn-img {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: 0.6rem;
+}
+.main-btn-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.4px;
+    color: #000;
+}
+
 /* SITE HEADER STYLES */
 .site-header {
     background-color: var(--bg-color);
@@ -193,33 +214,32 @@ img {
 }
 
 .photography-item {
-    display: flex;
-    align-items: center;
-}
-.photography-list {
-    width: 57.6rem;
+    display: grid;
+    grid-template-columns: 57.6rem 57.6rem;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.6rem 1.6rem;
 }
 .product{
     background-image: url(../img/ProductPhotography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 42.1rem 4.5rem 3rem 3rem;
-    margin-bottom: 1.6rem;
-    margin-right: 1.6rem;
+    /* margin-bottom: 1.6rem;
+    margin-right: 1.6rem; */
 }
 .architecture{
     background-image: url(../img/ArchitecturePhotography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 42.1rem 3.2rem 3rem 3rem;   
-    margin-bottom: 1.6rem;
+    /* margin-bottom: 1.6rem; */
 }
 .drone{
     background-image: url(../img/Drone-Photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40.1rem 3rem 3rem 3rem; 
-    margin-right: 1.6rem;  
+    /* margin-right: 1.6rem;   */
 }
 .wildlife{
     background-image: url(../img/WildlifePhotography.jpg);
@@ -238,25 +258,7 @@ img {
     color: #C0C0C0;
     margin-bottom: 1.7rem;
 }
-.photography-btn {
-    width: 14.3rem;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 1.4rem;
-    padding: 0.5rem 1rem 0.5rem 0.4rem;
-    text-decoration: none;
-}
-.photography-btn-img {
-    width: 3.2rem;
-    height: 3.2rem;
-    margin-right: 0.6rem;
-}
-.photography-btn-text {
-    font-size: 1.5rem;
-    letter-spacing: 0.4px;
-    color: #000;
-}
+
 
 /* MOUNT SECTION */
 .mount-section {
@@ -308,9 +310,9 @@ img {
 }
 
 /* TOOLS SECTION */
-.tools-section {
+/* .tools-section {
    
-}
+} */
 .tools-container {
     display: flex;
     justify-content: space-between;
@@ -337,22 +339,6 @@ img {
 }
 .tools-btn {
     width: 15.2rem;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 1.4rem;
-    padding: 0.5rem 1rem 0.5rem 0.4rem;
-    text-decoration: none;
-}
-.tools-btn-img {
-    width: 3.2rem;
-    height: 3.2rem;
-    margin-right: 0.6rem;
-}
-.tools-btn-text {
-    font-size: 1.5rem;
-    letter-spacing: 0.4px;
-    color: #000;
 }
 .tools-bottom {
     width: 72rem;
@@ -364,16 +350,255 @@ img {
 .tools-bottom-list{ 
     display: flex; 
     align-items: center;
+    margin-left: auto;
     padding-top: 48.5rem;
     padding-left: 41.6rem;
 }
 .tools-bottom-item {
     display: flex;
     align-items: center;
+    margin-right: 1.6rem;
 }
 .tools-bottom-item-img {
+    margin-right: 0.6rem;
     
 }
 .tools-bottom-item-text {
-    
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #fff;
 }
+
+
+/* LEAFS SECTION STYLES */
+.leafs-section {
+    background-image: url(../img/monstera-leafs-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.leafs-container {
+    text-align: center;
+    padding-top: 26rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.leafs-wrapper {
+    text-align: left;
+    width: 27.3rem;
+}
+
+
+/* CLIENTS SECTION STYLES */
+.clients-section {
+    background-color: var(--bg-color);
+}
+.clients-container {
+    padding-top: 11.3rem;
+    padding-bottom: 14rem;
+}
+.clients-inner {
+    font-size: 4rem;
+    line-height: 4.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--white-text-color);
+}
+.clients-text {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: center;
+    color: var(--second-text-color);
+    margin-bottom: 8.2rem;
+}
+.clients-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10.9rem;
+}
+.clients-list-item {
+    margin-left: 10.9rem;
+    cursor: pointer;
+}
+
+/* HIMALAYS SECTION STYLES */
+.himalays-section {
+    background-image: url(../img/clients-bottom-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.himalays-container {
+    text-align: center;
+    padding-top: 25rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.himalays-wrapper {
+    text-align: left;
+}
+.himalays-title{
+    width: 34.4rem;
+}
+.himalays-text{
+    width: 24.1rem;
+}
+
+/* FEATURES SECTION STYLES */
+.features {
+    background-color: var(--bg-color);
+}
+.features-container {
+    padding-top: 11.3rem;
+    padding-bottom: 10.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features-title {
+    max-width: 57.1rem;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    color: var(--white-text-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.features-text {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-align: center;
+    color: var(--second-text-color);
+    margin-bottom: 2.2rem;
+}
+.features-btn {
+    width: 15.4rem;
+}
+
+/* FOOTER SECTION STYLES */
+.footer {
+    background-color: var(--bg-color);
+}
+.footer-container {
+    padding-top: 10rem;
+    padding-bottom: 10.4rem;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+/* .footer-top-wrapper {
+} */
+.footer-logo {
+    width: 12.8rem;
+    height: 3.1rem;
+    margin-bottom: 2rem;
+}
+.footer-link-inner {
+    font-size: 1.3rem;
+    text-align: left;
+    color: var(--second-text-color);
+}
+.footer-list {
+    display: flex;
+}
+.footer-link {
+    list-style: none;
+}
+.footer-link li {
+    margin-top: 1rem;
+}
+.footer-link-two{
+    margin-left: 5.5rem;
+    margin-right: 10.2rem;
+}
+.footer-link-inner {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--second-text-color);
+}
+.footer-links-text {
+    text-decoration: none;
+    color: var(--white-text-color);
+}
+
+/* FOOTER FORM STYLES */
+.footer-form {
+    margin-top: 3.6rem;
+    margin-bottom: 5.6rem;
+    border-top: 2px solid var(--white-text-color);
+    border-bottom: 2px solid var(--white-text-color);
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* .footer-form-wrapper {
+} */
+.footer-wrapper-title {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 2rem;
+}
+.footer-wrapper-text {
+    font-size: 13px;
+    color: var(--second-text-color)
+}
+.form-footer {
+    padding: 0.7rem;
+    width: 45.8rem;
+    height: 5.2rem;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-bg);
+}
+.form-footer-input {
+    width: 37.6rem;
+    height: 4.5rem;
+    border: none;
+    outline: none;
+}
+.form-footer-btn{
+    border: none;
+    cursor: pointer;
+    width: 6.3rem;
+    height: 3rem;
+    border-radius: 1.1rem;
+    background-color: var(--bg-color);
+}
+
+/* FOOTER BOTTOM STYLES */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-bottom-title {
+    font-size: 1.4rem;
+    color: var(--second-text-color);
+}
+.footer-bootom-social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: -2.2rem;
+}
+.footer-bootom-social-item{
+    margin-right: 2.2rem;
+}
+
+
+
+
+
+@media (max-width: 1399.98px) {}
+@media (max-width: 1199.98px) {}  
+@media (max-width: 991.98px) {}
+@media (max-width: 767.98px) {}
+@media (max-width: 575.98px) {}
