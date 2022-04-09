@@ -94,8 +94,7 @@ img {
     max-width: 1200px;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 .header-container{
     display: flex;
@@ -112,7 +111,9 @@ img {
     object-fit: contain;
    
 }
-
+.site-header-nav{
+    display: flex;
+}
 .site-header-nav-list {
     list-style: none;
     display: flex;
@@ -195,9 +196,9 @@ img {
     padding-top: 11.2rem;
     padding-bottom: 10rem;
 }
-/* .photography {
-    
-} */
+.photography-list {
+    width: 57.6rem;
+}
 .photography-inner {
     text-align: center;
     font-size: 4rem;
@@ -214,32 +215,32 @@ img {
 }
 
 .photography-item {
-    display: grid;
-    grid-template-columns: 57.6rem 57.6rem;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.6rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .product{
     background-image: url(../img/ProductPhotography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 42.1rem 4.5rem 3rem 3rem;
-    /* margin-bottom: 1.6rem;
-    margin-right: 1.6rem; */
+    margin-bottom: 1.6rem;
+    margin-right: 1.6rem;
 }
 .architecture{
     background-image: url(../img/ArchitecturePhotography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 42.1rem 3.2rem 3rem 3rem;   
-    /* margin-bottom: 1.6rem; */
+    margin-bottom: 1.6rem;
 }
 .drone{
     background-image: url(../img/Drone-Photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40.1rem 3rem 3rem 3rem; 
-    /* margin-right: 1.6rem;   */
+    margin-right: 1.6rem;  
 }
 .wildlife{
     background-image: url(../img/WildlifePhotography.jpg);
@@ -348,11 +349,12 @@ img {
     position: relative;
 }
 .tools-bottom-list{ 
+    position: absolute;
     display: flex; 
     align-items: center;
-    margin-left: auto;
-    padding-top: 48.5rem;
-    padding-left: 41.6rem;
+    right: 0;
+    bottom: 4rem;
+    
 }
 .tools-bottom-item {
     display: flex;
@@ -415,6 +417,7 @@ img {
 .clients-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-left: -10.9rem;
@@ -496,6 +499,10 @@ img {
     width: 12.8rem;
     height: 3.1rem;
     margin-bottom: 2rem;
+}
+.footer-inner{
+    font-size: 1.3rem;
+    color: var(--second-text-color);
 }
 .footer-link-inner {
     font-size: 1.3rem;
@@ -587,7 +594,7 @@ img {
     list-style: none;
     display: flex;
     align-items: center;
-    margin-right: -2.2rem;
+
 }
 .footer-bootom-social-item{
     margin-right: 2.2rem;
@@ -597,8 +604,63 @@ img {
 
 
 
-@media (max-width: 1399.98px) {}
-@media (max-width: 1199.98px) {}  
-@media (max-width: 991.98px) {}
-@media (max-width: 767.98px) {}
-@media (max-width: 575.98px) {}
+/* @media (max-width: 1399.98px) {} */
+@media (max-width: 1199.98px) {
+    html{
+        font-size: 8px;
+    }
+    .tools-wrapper{
+        padding-right: 5rem;
+        padding-left: 0;
+    }
+    .tools-bottom {
+        width: 60rem;
+    }
+    .clients-list-item{
+        margin-bottom: 2rem;
+    }
+}  
+@media (max-width: 991.98px) {
+    html{
+        font-size: 6px;
+    }
+    /* .site-header-nav-list{
+        display: none;
+    } */
+}
+@media (max-width: 767.98px) {
+    .photography-list{
+        width: 59.6rem;
+    }
+}
+@media (max-width: 575.98px) {
+    html{
+        font-size: 7.5px;
+    }
+        .site-header-nav-list{
+        display: none;
+    }
+    .photography-item {
+        flex-wrap: wrap;
+    }
+    .photography-list{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .tools-bottom {
+        background-image: none;
+    }
+    .footer-list{
+        margin-left: 4rem;
+    } 
+    .footer-link-two{
+        margin-right: 2rem;
+    }
+    .form-footer{
+        margin-top: 2rem;
+    }
+    .footer-form{
+        flex-direction: column;
+    }
+}
