@@ -19,6 +19,13 @@
     --black-text-color: #000;
     --bg-color: #000;
 }
+.dark{
+    --white-bg: #000; 
+    --white-text-color: #000;
+    --second-text-color: #C0C0C0;
+    --black-text-color: #fff;
+    --bg-color: #fff;
+}
 
 /* GLOBAL STYLES */
 *,
@@ -94,7 +101,7 @@ img {
     max-width: 1200px;
     padding-left: 2rem;
     padding-right: 2rem;
-
+    margin: auto;
 }
 .header-container{
     display: flex;
@@ -109,6 +116,7 @@ img {
     width: 12.8rem;
     height: 3.1rem;
     object-fit: contain;
+    color: var(--white-text-color);
    
 }
 .site-header-nav{
@@ -340,6 +348,11 @@ img {
 }
 .tools-btn {
     width: 15.2rem;
+    background-color: var(--white-bg);
+}
+.tools-btn-text{
+    color: var(--black-text-color);
+
 }
 .tools-bottom {
     width: 72rem;
@@ -600,6 +613,30 @@ img {
     margin-right: 2.2rem;
 }
 
+
+/* DARK MODE */
+.themeSwitch{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-color);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeSwitch::before{
+    content: "\f186";
+    font-family: fontAwesome;
+    color: var(--white-text-color);
+    font-size: 20px;
+}
+.themeSwitch.active::before{
+    content: "\f185";
+    font-family: fontAwesome;
+}
+/* DARK MODE */
 
 
 

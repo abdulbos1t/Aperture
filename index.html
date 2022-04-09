@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/aperture.svg" type="image/x-icon">
     <title>Aperture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -36,8 +37,10 @@
                     <li class="site-header-nav-item">
                         <a href="" class="site-header-nav-item-link">Contact</a>
                     </li>
+                   
                 </ul>
                 <a href="#" class="header-btn">Get template</a>
+                <!-- <div class="themeSwitch"></div> -->
             </nav>
         </div>
     </header>
@@ -351,5 +354,15 @@
         </div>
     </div>
     <!-- FOOTER SECTION end -->
+
+    <script>
+    let themeSwitch = document.querySelector('.themeSwitch');
+        let body = document.querySelector('body');
+        
+        themeSwitch.onclick = function(){
+            themeSwitch.classList.toggle('active');
+            body.classList.toggle('dark');
+        };
+        </script>
 </body>
 </html>
